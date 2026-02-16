@@ -1,19 +1,16 @@
-import type { Metadata } from 'next';
 import './globals.css';
+import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 
 export const metadata: Metadata = {
   title: 'Grim Grounds Coffee',
-  description: 'Premium gothic coffee shop single-page template for Grim Grounds Coffee.',
+  description: 'Gothic coffee house landing page',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-[#0a0a0a] text-[#f3f1ed] antialiased">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
