@@ -22,7 +22,7 @@ export default function HomePage() {
         <div className="hero__inner">
           <div>
             <p className="hero__eyebrow">South Gate, CA 90280</p>
-            <h2 className="hero__title">Coffee for the Cursed.</h2>
+            <h2 className="hero__title">Coffee for the Grim.</h2>
             <p className="hero__copy">
               Small-batch roasts, midnight pastries, and a candlelit space built for late-night
               regulars.
