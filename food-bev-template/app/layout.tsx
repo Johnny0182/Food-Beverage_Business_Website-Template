@@ -10,7 +10,17 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <a
+          className="site-quote-popup"
+          href="https://www.codecompas.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Click here to go back to the www.CodeCompas.com website and request a quote
+        </a>
+      </body>
     </html>
   );
 }
