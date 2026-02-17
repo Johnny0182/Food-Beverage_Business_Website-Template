@@ -20,6 +20,42 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Deploying to Netlify (2026 guide)
+
+This repository is configured for Netlify with a root `netlify.toml` that points Netlify to the app folder (`food-bev-template`) and sets a compatible Node version.
+
+### 1) Push this repo to GitHub/GitLab/Bitbucket
+
+Netlify works best with Next.js when it builds from your Git provider.
+
+### 2) Create the site in Netlify
+
+1. Log in to Netlify.
+2. Click **Add new project** → **Import an existing project**.
+3. Select your Git provider and this repository.
+4. Keep the detected settings from `netlify.toml`.
+5. Click **Deploy site**.
+
+### 3) Environment variables (if needed)
+
+If you add secrets later (API keys, etc.), add them in:
+
+- **Site configuration** → **Environment variables**
+
+Then redeploy.
+
+### 4) Verify deployment
+
+After deploy:
+
+- Open the Netlify URL.
+- Check key routes.
+- If you use forms/functions later, verify those endpoints in production.
+
+### 5) Future updates
+
+Every push to your configured branch (usually `main`) triggers a new deploy automatically.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -28,9 +64,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
